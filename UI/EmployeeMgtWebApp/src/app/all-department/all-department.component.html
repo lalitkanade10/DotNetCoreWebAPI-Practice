@@ -1,0 +1,41 @@
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">  
+  <div class="container">
+    <a class="navbar-brand">Departments List </a> 
+    <div>
+      <div>
+        <label form="DepartmentName">Search : &nbsp;</label>
+        <input type="text" id="Search" name="Search" placeholder="Department Name" (input)="getSearch($event)">
+        
+        &nbsp;
+        <a aria-current="page" [routerLink]="['add']">
+          <button class="btn btn-secondary">Add New</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">DeptID</th>
+      <th scope="col">Department Name</th>
+      <th scope="col">DeleteFlag</th>
+      <th scope="col">Mdate</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Department of Departments">
+      <th scope="row">{{Department.deptID}}</th>
+      <td>{{Department.departmentName}}</td>
+      <td>{{Department.deleteFlag}}</td>
+      <td>{{Department.mDate}}</td>
+
+      <td><button type="button" value={{Department.deptID}} class="btn btn-info" id="update" (click)="getUpSelectedValue($event)">Update</button></td>
+      <td><button type="button" value={{Department.deptID}} class="btn btn-danger" id="remove" (click)="getSelectedValue($event)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,54 @@
+
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">  
+  <div class="container">
+    <a class="navbar-brand">Employee List</a> 
+    <div>
+      <div>
+        <label form="EmployeeName">Search : &nbsp;</label>
+        <input type="text" id="Search" name="Search" placeholder="Employee Name" (input)="getSearch($event)">
+        
+        &nbsp;
+        <a aria-current="page" [routerLink]="['add']">
+          <button class="btn btn-secondary">Add New</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">EID</th>
+        <th scope="col">Employee Name</th>
+        <th scope="col">EmailID</th>
+        <th scope="col">Address</th>
+        <th scope="col">Salary</th>
+        <th scope="col">DeptID</th>
+        <th scope="col">DepartmentName</th>
+        <th scope="col">DeleteFlag</th>
+        <th scope="col">MDate</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of Employee">
+        <th scope="row">{{emp.eid}}</th>
+        <td>{{emp.employeeName}}</td>
+
+        <td scope="col">{{emp.emailID}}</td>
+        <td scope="col">{{emp.address}}</td>
+        <td scope="col">{{emp.salary}}</td>
+        <td scope="col">{{emp.deptID}}</td>
+        <td scope="col">{{emp.departmentName}}</td>
+
+        <td>{{emp.deleteFlag}}</td>
+        <td>{{emp.mDate}}</td>
+
+        <td><button type="button" value={{emp.eid}} class="btn btn-info" id="update" (click)="getUpSelectedValue($event)">Update</button></td>
+        <td><button type="button" value={{emp.eid}} class="btn btn-danger" id="remove" (click)="getSelectedValue($event)">Delete</button></td>
+      </tr>      
+    </tbody>
+  </table>
+

@@ -1,0 +1,19 @@
+<div class="container">
+    <h1 class="mt-3">Add Departmnet</h1>
+    <form #form="ngForm" (ngSubmit)="onFormSubmit()">
+        <div class="mt-2">
+            <div class="mt-3">
+                <label form="DepartmentName">Department Name</label>
+                <input type="text" class="form-control" id="DepartmentName" name="DepartmentName" [(ngModel)]="model.DepartmentName">
+            </div>            
+            <div class="mt-3">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+            <div class="mt-3" style="display: none;">
+                <input type="text" class="form-control" id="deleteFlag" name="deleteFlag" [(ngModel)]="model.deleteFlag">
+                <input type="text" class="form-control" id="Mdate" name="Mdate" [(ngModel)]="model.mDate">
+            </div>
+        </div>
+    </form>
+</div>
+
