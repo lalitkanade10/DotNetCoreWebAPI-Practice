@@ -8,7 +8,7 @@ import { AddEmployeeRequest } from './models/add-employee-request.model';
 })
 export class EmployeeService {
 
-  private basePath ='https://localhost:44332/api/Employee';
+  private basePath ='https://localhost:44313/api/Employee';
   public EmpIDGlo=0;
 
 
@@ -27,7 +27,7 @@ export class EmployeeService {
 
   public getDepartment(): Observable<any>
   {
-    return this.http.get('https://localhost:44332/api/Department');
+    return this.http.get('https://localhost:44313/api/Department');
   }  
 
   public DeleteEmployeeByID(id:any): Observable<any>

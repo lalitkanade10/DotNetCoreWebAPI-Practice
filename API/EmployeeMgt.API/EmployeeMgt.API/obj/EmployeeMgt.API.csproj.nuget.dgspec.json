@@ -1,35 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practice\\EmployeeMgt\\EmployeeMgt.API\\EmployeeMgt.API\\EmployeeMgt.API.csproj": {}
+    "C:\\Users\\DELL\\Desktop\\DotNetProjects\\EmployeeManagementSystemAPI\\EmployeeMgt.API\\EmployeeMgt.API\\EmployeeMgt.API.csproj": {}
   },
   "projects": {
-    "D:\\Practice\\EmployeeMgt\\EmployeeMgt.API\\EmployeeMgt.API\\EmployeeMgt.API.csproj": {
+    "C:\\Users\\DELL\\Desktop\\DotNetProjects\\EmployeeManagementSystemAPI\\EmployeeMgt.API\\EmployeeMgt.API\\EmployeeMgt.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice\\EmployeeMgt\\EmployeeMgt.API\\EmployeeMgt.API\\EmployeeMgt.API.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\DotNetProjects\\EmployeeManagementSystemAPI\\EmployeeMgt.API\\EmployeeMgt.API\\EmployeeMgt.API.csproj",
         "projectName": "EmployeeMgt.API",
-        "projectPath": "D:\\Practice\\EmployeeMgt\\EmployeeMgt.API\\EmployeeMgt.API\\EmployeeMgt.API.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\DotNetProjects\\EmployeeManagementSystemAPI\\EmployeeMgt.API\\EmployeeMgt.API\\EmployeeMgt.API.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice\\EmployeeMgt\\EmployeeMgt.API\\EmployeeMgt.API\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\DotNetProjects\\EmployeeManagementSystemAPI\\EmployeeMgt.API\\EmployeeMgt.API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -40,42 +37,28 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[5.0.0, )",
-              "noWarn": [
-                "NU1605"
-              ]
-            },
-            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
-              "target": "Package",
-              "version": "[5.0.0, )",
-              "noWarn": [
-                "NU1605"
-              ]
-            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[6.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -84,7 +67,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -96,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

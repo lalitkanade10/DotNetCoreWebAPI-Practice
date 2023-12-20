@@ -19,7 +19,7 @@ export class AddDepartmentComponent {
       this.model={
         DepartmentName: '',  
         deleteFlag:0,
-        mDate:'2023-12-10'
+        mDate:new Date()
       }
       this.UpdateDeptID=0;
       if(this.departmentService.DeptIDGlo !=0)
@@ -38,12 +38,13 @@ export class AddDepartmentComponent {
       //insert
       //alert('insert');
       this.departmentService.addDepartments(this.model).subscribe(result => {
-
+       // alert('done');
         alert(`New Department added with ID  = ${result}`);
         this.model.DepartmentName='';
         this.model.deleteFlag=0;
-        this.model.mDate='';
-        this.UpdateDeptID=0;
+        this.model.mDate= new Date();
+        this.UpdateDeptID=0;       
+        //alert('done2'); 
       });
     }
     else
@@ -54,7 +55,7 @@ export class AddDepartmentComponent {
         alert(`Department Updated with = ${result}`);
         this.model.DepartmentName='';
         this.model.deleteFlag=0;
-        this.model.mDate='';
+        this.model.mDate=new Date();
         this.UpdateDeptID=0;
         this.router.navigate(['/depts']); 
       });
@@ -73,5 +74,7 @@ export class AddDepartmentComponent {
 
     });
   }
+
+  
 
 }

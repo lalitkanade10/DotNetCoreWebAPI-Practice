@@ -29,7 +29,8 @@ export class AllDepartmentComponent implements OnInit {
 
   private deleteDepartmentByID(id:any): void {
     this.service.DeleteDepartmentsByID(id).subscribe(result => {
-      this.Departments = result;
+      //alert(result);
+      //this.Departments = result;
     });
   }
 

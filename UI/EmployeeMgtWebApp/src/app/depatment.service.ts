@@ -8,7 +8,7 @@ import { AddDepartmentRequest } from './models/add-department-request.model';
 })
 export class DepatmentService {
 
-  private basePath ='https://localhost:44332/api/Department';
+  private basePath ='https://localhost:44313/api/Department';
   public DeptIDGlo=0;
 
 
@@ -20,7 +20,8 @@ export class DepatmentService {
   }
 
   public addDepartments(model:AddDepartmentRequest): Observable<any>
-  {
+  {    
+    //alert('h1');
     return this.http.post(this.basePath, model);    
   }
 

@@ -5,5 +5,5 @@ export interface AddEmployeeRequest{
     Salary: number;
     DeptID:number;
     DeleteFlag:number;
-    MDate:string
+    MDate:Date
 }

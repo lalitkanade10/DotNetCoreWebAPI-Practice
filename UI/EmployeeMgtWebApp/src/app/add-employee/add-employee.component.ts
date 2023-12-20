@@ -30,7 +30,7 @@ export class AddEmployeeComponent {
       Salary: 0,
       DeptID:0,
       DeleteFlag:0,
-      MDate:'2023-12-10'
+      MDate:new Date()
     }
     
     // for update
@@ -71,7 +71,7 @@ export class AddEmployeeComponent {
 
     if(this.UpdateEmpID!=0)
     {
-      // this code is for save the data
+      // this code is for Update the data
        this.employeeService.UpdateEmployeeByID(this.model,this.UpdateEmpID).subscribe(result => {
         alert(`New Employee Update with = ${result}`);      
         this.model.EmployeeName= '';
@@ -80,7 +80,7 @@ export class AddEmployeeComponent {
         this.model.Salary= 0;
         this.model.DeptID=0;
         this.model.DeleteFlag=0;
-        this.model.MDate='2023-12-10';
+        this.model.MDate=new Date();
 
         this.UpdateEmpID=0;
         this.FirstTimeFlag=false;
@@ -91,6 +91,7 @@ export class AddEmployeeComponent {
     else
     {
       // this code is for save the data
+      
       this.employeeService.addEmployee(this.model).subscribe(result => {
         alert(`New Employee added with id  = ${result}`);      
         this.model.EmployeeName= '';
@@ -99,7 +100,7 @@ export class AddEmployeeComponent {
         this.model.Salary= 0;
         this.model.DeptID=0;
         this.model.DeleteFlag=0;
-        this.model.MDate='2023-12-10';
+        this.model.MDate=new Date();
         this.getDept();
         this.model.DeptID=0;
         
@@ -173,15 +174,7 @@ export class AddEmployeeComponent {
   //         console.log(this.TempDeptList[key][key1])
   //         alert('key');
   //     }
-  //  }
-
-
-
-
-
-
-
-      
+  //  }    
 
     });
   }

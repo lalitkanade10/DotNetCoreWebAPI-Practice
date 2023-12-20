@@ -8,6 +8,6 @@ namespace EmployeeMgt.API.Models
     public class DepartmentModels:FlagsModels
     {
         public int DeptID { get; set; }
-        public string DepartmentName { get; set; }
+        public string? DepartmentName { get; set; }
     }
 }
